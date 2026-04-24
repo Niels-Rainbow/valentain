@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #12121f;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(2rem, 5.5vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  text-shadow:
+    2px 2px 0px #d4487a,
+    0 0 20px rgba(212, 72, 122, 0.7),
+    0 0 40px rgba(212, 72, 122, 0.4),
+    0 0 70px rgba(212, 72, 122, 0.2);
+  text-align: center;
+  animation: scriptPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes scriptPulse {
+
+  0%,
+  100% {
+    text-shadow:
+      2px 2px 0px #d4487a,
+      0 0 20px rgba(212, 72, 122, 0.7),
+      0 0 40px rgba(212, 72, 122, 0.4),
+      0 0 70px rgba(212, 72, 122, 0.2);
+  }
+
+  50% {
+    text-shadow:
+      2px 2px 0px #d4487a,
+      0 0 30px rgba(212, 72, 122, 1),
+      0 0 60px rgba(212, 72, 122, 0.7),
+      0 0 100px rgba(212, 72, 122, 0.4);
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gif_container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
